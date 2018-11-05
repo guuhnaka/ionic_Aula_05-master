@@ -1,0 +1,44 @@
+<!--
+ -copyright
+  Aluno:Gustavo Nakaura RA:816253667
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Filme</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="onInput($event)"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  <ion-list >
+      <ion-item>
+          <ion-label color="black">Minha vida</ion-label>
+          <ion-label color="primary">Terror</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label color="black">The Avengers</ion-label>
+          <ion-label color="primary">Ação</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label color="black">A Noite do Jogo</ion-label>
+          <ion-label color="primary">Comedia</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label color="black">Black Panthers</ion-label>
+          <ion-label color="primary">Herois</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label color="black">Hotel Transilvânia 3: Férias Monstruosas</ion-label>
+          <ion-label color="primary">Infantil</ion-label>
+        </ion-item>
+  </ion-list>
+  <button ion-button round >Editar</button>
+  <button ion-button round >Excluir</button>
+</ion-content>
